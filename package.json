@@ -1,0 +1,25 @@
+{
+  "name": "simple-sqlite3-wrapper",
+  "version": "1.0.0",
+  "description": "A simplistic wrapper for an sqlite3 database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quin-vannatter/simple-sqlite3-wrapper.git"
+  },
+  "keywords": [
+    "sqlite3",
+    "wrapper",
+    "table",
+    "crud"
+  ],
+  "author": "Quin Vannatter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quin-vannatter/simple-sqlite3-wrapper/issues"
+  },
+  "homepage": "https://github.com/quin-vannatter/simple-sqlite3-wrapper#readme"
+}
