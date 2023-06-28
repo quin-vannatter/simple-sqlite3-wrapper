@@ -24,8 +24,12 @@ exports.createWrapper = function(tableName, properties, db) {
         return {
             sql: `${sql} WHERE ${Object.keys(object).filter(key => propMap.some(property => property.jsonKey === key)).map(key => {
                 let property = propMap.find(property => property.jsonKey ===  key);
-                values.push(formatValue(object[key]));
-                return `${property.sqlKey} = ?`;
+                if (object[key] != undefined) {
+                    values.push(formatValue(object[key]));
+                    return `${property.sqlKey} = ?`;
+                } else {
+                    return `${property.sqlKey} IS NULL`;
+                }
             }).join(" AND ")};`,
             values
         };
