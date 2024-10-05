@@ -1,6 +1,6 @@
 {
   "name": "simple-sqlite3-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simplistic wrapper for an sqlite3 database",
   "main": "index.js",
   "scripts": {
